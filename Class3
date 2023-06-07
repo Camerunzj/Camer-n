@@ -1,0 +1,106 @@
+/*
+ * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
+ * Click nbfs://nbhost/SystemFileSystem/Templates/Classes/Main.java to edit this template
+ */
+package semana.pkg3;
+import javax.swing.JOptionPane;
+/**
+ *
+ * @author camer
+ */
+public class Semana3 {
+
+    /**
+     * @param args the command line arguments
+     */
+    public static void main(String[] args) {
+        // TODO code application logic here
+      /*  for (int i=0; i<5; i++) {
+        System.out.println( "@");
+     */
+    /*  String tabla;
+      tabla = JOptionPane.showInputDialog("Digite el numero de la tabla:");
+      int number;
+      number = Integer.parseInt(tabla);
+       for (int i=0; i<11; i++) {
+        System.out.println( number+" x "+i+" = "+ (number*i) );
+     */
+    
+    
+  /*  String leer;
+    int number;
+    leer = JOptionPane.showInputDialog("Digite el numero menor a 10");
+    number = Integer.parseInt(leer);
+        for (int i= 1; i<=number; i++) {
+            for (int j= 1; j<=i; j++){ 
+                System.out.print("*");
+            }
+            System.out.print("\n");
+        */  
+            
+      /*  for (int i=20; i<31; i++) {
+            System.out.println("El var de "+i+" al cuadrado es"+i*i);
+            */
+    
+      /*
+    String number = JOptionPane.showInputDialog("Digite la cantidad de estudiantes");
+    int students = Integer.parseInt(number);
+    int average = 0;
+    int big = 0;
+    int small= 100;
+    int approved = 0;
+    int suma = 0;
+    for (int i = 0; i<students; i++){
+        String nota = JOptionPane.showInputDialog("Digite la nota del estudiante "+(i+1));
+        int notes = Integer.parseInt(nota);
+        suma +=notes;
+        if (notes<=small){
+            small=notes;
+        }
+        if (notes>=big){
+            big=notes;
+        }
+        if (notes>=70){
+            approved++;
+        }  
+    }
+    average=suma/students;
+     JOptionPane.showMessageDialog(null, "La nota promedio es : "+average+"\n"+"La nota mayor es : "+big+"\n" + "La nota menor es : "+small+"\n"+"Los estudiantes aprovados son : "+approved);
+      */
+      
+    int big = 0;
+    int small= 100;
+    int approved = 0;
+    int suma = 0;
+    int numero,elementos = 0;
+    float average;
+    numero = 1;
+    while ( numero >= 0){
+        numero = Integer.parseInt(JOptionPane.showInputDialog("Digite la nota del estudiante: "));
+        suma += numero;
+        elementos++;
+        if (numero<0){
+            break;
+        }
+        if (numero<=small){
+            small=numero;
+        }
+        if (numero>=big){
+            big=numero;
+        }
+        if (numero>=70){
+            approved++;
+        }  
+    }
+    
+        average = (float) suma/elementos;
+     JOptionPane.showMessageDialog(null, "La nota promedio es : "+average+"\n"+"La nota mayor es : "+big+"\n" + "La nota menor es : "+small+"\n"+"Los estudiantes aprovados son : "+approved);
+      
+        }
+    }
+
+
+
+       
+    
+ 
